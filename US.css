@@ -62,9 +62,9 @@ i{
 }
 
 .bucket:after{
-  /* padding: 10rem; */
   content: '';
   position: absolute;
+  height: 105%;
   top: 0;
   left: 0;
   right: 0;
@@ -76,6 +76,7 @@ i{
 }
 
   .bucket.in:after{
+
     animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
   }
 
@@ -155,6 +156,7 @@ button{
 #bold{
   font-size: 1.2rem;
 }
+
 .cursor{
    position: fixed;
    width: 70px;

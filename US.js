@@ -1,13 +1,16 @@
 var hour = new Date().getHours()
 let out;
-if (hour = 0 && hour < 12) {
-    out = 'GOOD MORNING USERNAME'
-} else if (hour = 12 && hour <= 16) {
-    out = 'GOOD AFTERNOON USERNAME'
-} else {
-    out = "GOOD EVENING USERNAME"
+function greet() {
+    if (hour = 0 && hour < 12) {
+        out = 'GOOD MORNING USERNAME'
+    } else if (hour = 12 && hour === 16) {
+        out = 'GOOD AFTERNOON USERNAME'
+    } else {
+        out = "GOOD EVENING USERNAME"
+    }
+    document.getElementById('bold').innerHTML = out;
 }
-document.getElementById('bold').innerHTML = out;
+greet()
 
 let dateString = ['sunday', 'monday', 'tuesday', 'wednessday', 'thursday', 'friday', 'saturday']
 let day = new Date().getDay();

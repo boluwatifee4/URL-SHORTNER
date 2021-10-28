@@ -20,8 +20,12 @@ button{
         border: none;
         padding: 1rem;
         margin: 2rem;
+        margin-bottom: 0;
         flex-direction: column;
     }
+    #light{
+        font-size: 1rem;
+      }
     input{
         color: white;
         background-color: transparent;
@@ -31,6 +35,9 @@ button{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    .bucket::after{
+        margin: .3rem;
     }
     input:focus{
         padding: .2rem 2rem;
