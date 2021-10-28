@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 body{
   background:  linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
-  font-family: 'Gochi Hand', cursive !important;
+  font-family: 'Oxygen', sans-serif !important;
   justify-content: center;
   align-items: center;
 }
