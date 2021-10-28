@@ -14,22 +14,26 @@ button{
         font-size: 1.7rem;
     }
     #bold,#light{
-        font-size: .8rem;
+        font-size: 1.1rem;
     }
-    .short{
+    .short{        
+        border: none;
         padding: 1rem;
         margin: 2rem;
         flex-direction: column;
     }
     input{
-        margin: 1rem;
-        padding: .2rem .5rem;
+        color: white;
+        background-color: transparent;
+        border-bottom:3px solid white;
+        margin: 1rem !important;
+        padding: .2rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
     input:focus{
-        padding: .2rem .5rem;
+        padding: .2rem 2rem;
     }
     button{
         border-radius: 5px;
@@ -39,4 +43,14 @@ button{
     .shortener-text{
         margin: 4rem .5rem;
     }
+    .cursor, .cursor2{
+        display: none;
+    }
+
+    ::-webkit-input-placeholder{
+        color: white;
+    }
+    /* .container{
+        display: none;
+    } */
 }
