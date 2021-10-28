@@ -135,6 +135,9 @@ input:focus{
   padding-left:1rem ;
   transition: .5s linear;
 }
+.input{
+  margin-top: 3rem;
+}
 .input p{
   margin: .6rem;
   color: white;
