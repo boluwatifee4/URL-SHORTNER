@@ -47,9 +47,7 @@ button{
         padding: .3rem;
         font-size: .6rem;
     }
-    .shortener-text{
-        margin: 4rem .5rem;
-    }
+    
     .cursor, .cursor2{
         display: none;
     }
