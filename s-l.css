@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body{
+    background:  linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    font-family: 'Gochi Hand', cursive;
+    color: white;
+  }
+  .form-body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6rem;
+  }
+h1{
+    margin: 1rem;
+}
+h3{
+    margin-bottom: 2rem;
+}
+input{
+    background-color: transparent;
+    padding: 1.5rem;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 1rem;
+    margin-left: 0;
+    caret-color: white;
+    color: white;
+}
+input:focus{
+    outline: none;
+    color: rgb(253, 229, 229);
+}
+::-webkit-input-placeholder{
+    color: rgb(253, 229, 229);
+    padding: .5rem;
+}
+.l-form{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    padding:.8rem;
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+}
+button a{
+    font-size: 1rem;
+    color: black;
+}
+a{
+    color: white;
+    font-size: .8rem;
+}
+.s{
+    margin-top: 2.5rem;
+}
+.s h1{
+    font-size:2.2rem
+}
+.s input{
+    padding: 1.5rem 10rem;
+    padding-left: 0;
+}
+

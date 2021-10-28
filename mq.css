@@ -1,0 +1,42 @@
+
+
+button{
+    background-color: white;
+}
+#copy{
+    color: black;
+}
+@media only screen and (max-width:1024px) and (min-width:52px){
+    header{
+        margin: 1rem 0;
+    }
+    .logo, span, i{
+        font-size: 1.7rem;
+    }
+    #bold,#light{
+        font-size: .8rem;
+    }
+    .short{
+        padding: 1rem;
+        margin: 2rem;
+        flex-direction: column;
+    }
+    input{
+        margin: 1rem;
+        padding: .2rem .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    input:focus{
+        padding: .2rem .5rem;
+    }
+    button{
+        border-radius: 5px;
+        padding: .3rem;
+        font-size: .6rem;
+    }
+    .shortener-text{
+        margin: 4rem .5rem;
+    }
+}
