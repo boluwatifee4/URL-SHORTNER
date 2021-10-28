@@ -70,4 +70,20 @@ a{
     padding: 1.5rem 10rem;
     padding-left: 0;
 }
+.h-k{
+    position: absolute;
+    width: 25%;
+  }
+  .s-k{
+      position: absolute;
+      left: 80%;
+      top: 70%;
+  }
+  @media only screen and (max-width:1024px) and (min-width:280px) {
+    .s-k{
+        top: 80%;
+        width: 25%;
+        left: 65%;
+    }
+  }
 
