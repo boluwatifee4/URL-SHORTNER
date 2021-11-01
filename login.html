@@ -12,15 +12,33 @@
     <div class="form-body ls">
         <h1 class="sl">Hi Welcome Back</h1>
         <h3>Login Here</h3>
+        <p class="info"></p>
        <div class="l-form">
         <label>Username</label>
-        <input type="text" placeholder="Enter Your Username">
+        <input type="text" placeholder="Enter Your Username" id="UserName">
         <label>Password</label>
-        <input type="pasword" placeholder="Enter Your Password">
-        <button><a href="main.html">LOGIN</a></button>
+        <input type="pasword" placeholder="Enter Your Password" id="PassWord">
+        <button id="login"><a href="#">LOGIN</a></button>
         <a href="index.html">Don't have an accoint? sign up here</a>
        </div>
     </div>
     <img src="./smile-pass-removebg-preview.png" alt="" class="s-k">
+    <script>
+        //login authentication
+        function authSignUp() {
+            let nameUser = document.getElementById("UserName").value;
+            let passCode = document.getElementById('PassWord').value;
+            if (nameUser && passCode !== null) {
+                window.location.href = "main.html"
+            } else {
+                document.querySelector('.info').innerHTML = "Please Input All Fields!!"
+
+            }
+        }
+        document.querySelector('#login').addEventListener('click', () => {
+            console.log('i was clicked')
+            authSignUp()
+        })
+    </script>
 </body>
 </html>

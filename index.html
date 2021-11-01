@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,44 @@
     <link rel="stylesheet" href="s-l.css">
     <title>URL SHORTENER LOGIN</title>
 </head>
+
 <body>
     <img src="./hand-key-removebg-preview.png" alt="" class="h-k">
     <div class="form-body s">
         <h1>Hello Welcome </h1>
         <h3>Create An Account</h3>
-       <div class="l-form">
-        <label>Username</label>
-        <input type="text" placeholder="Enter Your Username">
-        <label>Email</label>
-        <input type="email" placeholder="Enter Your Email">
-        <label>Password</label>
-        <input type="pasword" placeholder="Enter Your Password">
-        <button><a href="login.html">SIGN UP</a></button>
-        <a href="login.html">Already have an accoint? sign up here</a>
-       </div>
+        <div class="l-form">
+            <p class="info"></p>
+            <label>Username</label>
+            <input type="text" placeholder="Enter Your Username" id="userName">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Your Email" id="email">
+            <label>Password</label>
+            <input type="pasword" placeholder="Enter Your Password" id="passWord">
+            <button id="signUp">SIGN UP</button>
+            <a href="login.html">Already have an accoint? sign up here</a>
+        </div>
     </div>
     <img src="./smile-pass-removebg-preview.png" alt="" class="s-k">
+
+    <script>
+        //signUp authentication
+        function authSignUp() {
+            let nameUser = document.getElementById("userName").value;
+            let email = document.getElementById('email').value;
+            let passCode = document.getElementById('passWord').value;
+            if (nameUser && email && passCode !== null) {
+                window.location.href = "login.html"
+            } else {
+                document.querySelector('.info').innerHTML = "Please Input All Fields!!"
+
+            }
+        }
+        document.querySelector('#signUp').addEventListener('click', () => {
+            console.log('i was clicked')
+            authSignUp()
+        })
+    </script>
 </body>
+
 </html>

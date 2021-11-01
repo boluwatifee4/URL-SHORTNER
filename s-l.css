@@ -81,6 +81,11 @@ a{
       left: 80%;
       top: 70%;
   }
+  .info{
+      color: red;
+      font-size: 1rem;
+      margin: .5rem;
+  }
   
   @media only screen and (max-width:1024px) and (min-width:280px) {
     .s-k{
